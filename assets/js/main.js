@@ -47,28 +47,6 @@
     });
 
   });
-  const toggleButton = document.getElementById("toggleModeBtn");
-const body = document.body;
-
-// Vérifie si le mode sombre est activé (en utilisant une classe CSS)
-if (body.classList.contains("sombre")) {
-    toggleButton.textContent = "Désactiver le Mode Sombre";
-} else {
-    toggleButton.textContent = "Activer le Mode Sombre";
-}
-
-// Ajouter l'événement au bouton
-toggleButton.addEventListener("click", function() {
-    if (body.classList.contains("clair")) {
-        body.classList.remove("clair");
-        body.classList.add("sombre");
-        toggleButton.textContent = "Désactiver le Mode Sombre";
-    } else {
-        body.classList.remove("sombre");
-        body.classList.add("clair");
-        toggleButton.textContent = "Activer le Mode Sombre";
-    }
-});
 
 
   /**
